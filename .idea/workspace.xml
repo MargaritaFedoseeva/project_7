@@ -240,7 +240,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540548727281" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540549131269" />
     <property name="settings.editor.selected.configurable" value="terminal" />
   </component>
   <component name="RunDashboard">
@@ -400,8 +400,6 @@
           <folding>
             <element signature="e#85#86#0" expanded="true" />
             <element signature="e#112#113#0" expanded="true" />
-            <element signature="e#82#83#0" expanded="true" />
-            <element signature="e#106#107#0" expanded="true" />
             <element signature="e#233#234#0" expanded="true" />
             <element signature="e#273#274#0" expanded="true" />
           </folding>
@@ -434,10 +432,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
           <caret line="25" column="18" selection-start-line="25" selection-start-column="18" selection-end-line="25" selection-end-column="18" />
-          <folding>
-            <element signature="e#532#533#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
