@@ -8,6 +8,9 @@ public class Circle implements Calculator {
     }
 
     public double calculationSquare() {
+
+        if(r<0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'r' не может быть отрицательна");
         return Math.PI * Math.pow(r, 2);
     }
 

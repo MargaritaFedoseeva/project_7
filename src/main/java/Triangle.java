@@ -15,11 +15,20 @@ public class Triangle implements Calculator {
     }
 
     public double calculationSquare() {
-
+        if (a < 0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'a' не может быть отрицательна");
+        else if (b < 0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'b' не может быть отрицательна");
         return 0.5 * a * b;
     }
 
     public double calculationPerimeter() {
-        return a+b+c;
+        if (a < 0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'a' не может быть отрицательна");
+        else if (b < 0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'b' не может быть отрицательна");
+        else if (c < 0)
+            throw new ExceptionPartiesNotNegative("Сторона прямоугольника 'b' не может быть отрицательна");
+        return a + b + c;
     }
 }
