@@ -1,32 +1,34 @@
-import org.junit.Assert;
-import org.junit.Rule;
-import org.junit.Test;
+
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class CalculatorTest {
 
     @Test
-    public void testTriangleCalculationPerimeter() {
+    void testTriangleCalculationPerimeter() {
         Triangle triangle = new Triangle(2, 3, 1);
-        Assert.assertEquals(6, triangle.calculationPerimeter(), 0);
+        assertEquals(6, triangle.calculationPerimeter(), 0);
     }
 
     @Test
-    public void testTriangleCalculationSquare() {
+    void testTriangleCalculationSquare() {
         Triangle triangle = new Triangle(3, 8);
-        Assert.assertTrue("При вычислении площади треугольника получина ошибка. Получено значение " + triangle.calculationSquare() + ". Ожидалось 12!", triangle.calculationSquare() == 12);
+        assertTrue( triangle.calculationSquare() == 12,"При вычислении площади треугольника получина ошибка. Получено значение " + triangle.calculationSquare() + ". Ожидалось 12!");
     }
 
 
     @Test
-    public void testCircleCalculationPerimeter() {
+    void testCircleCalculationPerimeter() {
         Circle circle = new Circle(2);
-        Assert.assertEquals(12, circle.calculationPerimeter(), 0.6);
+        assertEquals(12, circle.calculationPerimeter(), 0.6);
     }
 
     @Test
-    public void testCircleCalculationSquare() {
+    void testCircleCalculationSquare() {
         Circle circle = new Circle(2);
-        Assert.assertEquals(12, circle.calculationSquare(), 0.6);
+        assertEquals(12, circle.calculationSquare(), 0.6);
     }
 
 }

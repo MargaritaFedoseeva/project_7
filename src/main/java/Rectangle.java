@@ -1,3 +1,4 @@
+import com.sun.deploy.security.ruleset.Rule;
 import org.junit.rules.TestRule;
 import org.junit.runner.Description;
 import org.junit.runners.model.Statement;
@@ -35,12 +36,13 @@ public class Rectangle implements Calculator, TestRule {
         return (a + b) * 2;
     }
 
-    public Statement apply(final Statement statement, Description description) {
-        return new Statement() {
-            @Override
-            public void evaluate() throws Throwable {
-                statement.evaluate();
-            }
-        };
+    public Statement apply(final Statement statement, Description description) { {
+            return new Statement() {
+                @Override
+                public void evaluate() throws Throwable {
+                    statement.evaluate();
+                }
+            };
+        }
     }
 }

@@ -1,6 +1,6 @@
 import org.junit.Assert;
 import org.junit.Rule;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 public class CalculatorTestRectangle {
     Random random = new Random();
@@ -9,7 +9,7 @@ public class CalculatorTestRectangle {
 
 
     @Test
-    public void testRectangleCalculationPerimeter() {
+     void testRectangleCalculationPerimeter() {
         Assert.assertEquals((random.getRandom_number1() + random.getRandom_number2()) * 2, rectangle.calculationPerimeter(), 0);
     }
 
