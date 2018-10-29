@@ -18,16 +18,4 @@ public class CalculatorTestRectangle {
         Assert.assertEquals(random.getRandom_number1() * random.getRandom_number2(), rectangle.calculationSquare(), 0);
     }
 
-//    @Test
-//    public void testCircleCalculationPerimeter() {
-//        Circle circle = new Circle(2);
-//        Assert.assertEquals(12, circle.calculationPerimeter(), 0.6);
-//    }
-//
-//    @Test
-//    public void testCircleCalculationSquare() {
-//        Circle circle = new Circle(2);
-//        Assert.assertEquals(12, circle.calculationSquare(), 0.6);
-//    }
-
 }
