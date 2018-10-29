@@ -8,12 +8,12 @@ public class CalculatorTest {
         Triangle triangle = new Triangle(2,3,1);
         Assert.assertEquals(6, triangle.calculationPerimeter(), 0);
     }
-//
-//    @Test
-//    public void testTriangleCalculationSquare() {
-//        Triangle triangle = new Triangle(3,8);
-//        Assert.assertTrue("При вычислении площади треугольника получина ошибка. Получено значение "+triangle.calculationSquare()+". Ожидалось 12!", triangle.calculationSquare()==12);
-//    }
+
+    @Test
+    public void testTriangleCalculationSquare() {
+        Triangle triangle = new Triangle(3,8);
+        Assert.assertTrue("При вычислении площади треугольника получина ошибка. Получено значение "+triangle.calculationSquare()+". Ожидалось 12!", triangle.calculationSquare()==12);
+    }
 
 
     @Test

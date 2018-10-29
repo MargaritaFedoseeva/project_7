@@ -1,17 +1,25 @@
-public class Triangle extends Calculator {
+public class Triangle implements Calculator {
+    private double a;
+    private double b;
+    private double c;
+
     public Triangle(double a, double b, double c) {
-        super(a, b, c);
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public Triangle(double a, double b) {
-        super(a, b);
+        this.a = a;
+        this.b = b;
     }
 
     public double calculationSquare() {
-        return 1/2*getA()*getB();
+
+        return 0.5 * a * b;
     }
 
     public double calculationPerimeter() {
-        return getA()+getB()+getC();
+        return a+b+c;
     }
 }
